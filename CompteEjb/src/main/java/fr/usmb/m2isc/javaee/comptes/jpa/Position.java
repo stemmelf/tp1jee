@@ -7,9 +7,6 @@ import javax.persistence.*;
 @Embeddable
 public class Position implements Serializable {
 
-    @Id
-    private int id;
-
     private float longitude;
     private float latitude;
 

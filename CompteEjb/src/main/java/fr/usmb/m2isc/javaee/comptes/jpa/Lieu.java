@@ -8,10 +8,6 @@ import javax.persistence.*;
 @Embeddable
 public class Lieu implements Serializable {
 
-
-    @Id
-    private int id;
-
     private String nom;
 
     @Embedded

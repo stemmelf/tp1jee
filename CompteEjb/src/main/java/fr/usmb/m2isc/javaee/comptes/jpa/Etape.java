@@ -8,9 +8,6 @@ import javax.persistence.*;
 @Embeddable
 public class Etape implements Serializable {
 
-    @Id
-    private int id;
-
     @Embedded
     private Lieu emplacement;
     private String etat;
