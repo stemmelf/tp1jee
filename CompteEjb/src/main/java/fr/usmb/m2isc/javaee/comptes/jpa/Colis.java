@@ -19,9 +19,19 @@ public class Colis implements Serializable {
     private float valeur;
 
     @Embedded
+    @AttributeOverrides({
+            @AttributeOverride(name="nom", column=@Column(name="nomOrigin")),
+            @AttributeOverride(name="latitude", column=@Column(name="latOrigine")),
+            @AttributeOverride(name="longitude", column=@Column(name="longOrigine"))
+    })
     private Lieu origine;
 
     @Embedded
+    @AttributeOverrides({
+            @AttributeOverride(name="nom", column=@Column(name="nomDest")),
+            @AttributeOverride(name="latitude", column=@Column(name="latDest")),
+            @AttributeOverride(name="longitude", column=@Column(name="longDest"))
+    })
     private Lieu destination;
 
     @Embedded
@@ -31,7 +41,6 @@ public class Colis implements Serializable {
     }
 
     public Colis(float poids, float valeur, Lieu origine, Lieu destination, Etape etape) {
-        super();
         this.poids = poids;
         this.valeur = valeur;
         this.origine = origine;
