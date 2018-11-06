@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Enregistrement d'un colis</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css" >
+</head>
+<body>
+<h1>Enregistrement d'un colis</h1>
+	<h2>Créer un colis :</h2>
+	<form action="CreerColisServlet" method="post"><br/>
+		poids   : <input type="text" name="poids"><br/>
+		valeur  : <input type="text" name="valeur"><br/>
+        _____________________________________________<br/>
+		Longitude d'origine         : <input type="text" name="longOrigine"><br/>
+		Latitude d'origine          : <input type="text" name="latOrigine"><br/>
+		Nom de l'origine            : <input type="text" name="nomOrigine"><br/>
+		_____________________________________________<br/>
+		Longitude de la destination : <input type="text" name="longDest"><br/>
+		Latitude de la destination  : <input type="text" name="latDest"><br/>
+		Nom de la destination       : <input type="text" name="nomDest"><br/>
+		<input type="submit" value="valider"><br/>
+	</form>
+<p><a href="index.html">Revenir à la page principale</a></p>
+</body>
+</html>

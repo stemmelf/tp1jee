@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Progression d'un colis</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css" >
+</head>
+<body>
+<h1>Progression d'un colis</h1>
+	<h2>Progression :</h2>
+	<form action="ProgressColisServlet" method="post">
+		id du colis   : <input type="text" name="id"><br/>
+		Etat du colis : <input type="text" name="nomEtat"><br/>
+		_____________________________________________<br/>
+		Longitude de l'étape : <input type="text" name="longEtape"><br/>
+		Latitude de l'étape  : <input type="text" name="latEtape"><br/>
+		Nom de l'étape       : <input type="text" name="nomEmplacementEtape"><br/>
+		<input type="submit" value="valider"><br/>
+	</form>
+<p><a href="index.html">Revenir à la page principale</a></p>
+</body>
+</html>
